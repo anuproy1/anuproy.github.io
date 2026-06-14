@@ -1,37 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Anup Kumar Roy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anup Kumar Roy's engineering and research portfolio">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Anup Kumar Roy</h1>
-  <p>M.S. Electrical and Computer Engineering, Lamar University</p>
+  <header class="topbar">
+    <a id="brand" class="brand" href="#home">Portfolio</a>
+    <button id="menuToggle" class="menu-btn" type="button" aria-expanded="false" aria-controls="siteNav">Menu</button>
+    <nav id="siteNav" aria-label="Main navigation"></nav>
+    <div class="header-actions">
+      <button id="searchToggle" class="icon-btn" type="button" aria-label="Search portfolio">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>
+      </button>
+      <button id="themeToggle" class="theme-btn" type="button" aria-label="Switch color theme">Theme</button>
+    </div>
+  </header>
 
-  <h2>About Me</h2>
-  <p>I am interested in VLSI Design, Static Timing Analysis, Physical Design, FPGA Design, and CMOS reliability research.</p>
+  <div id="searchPanel" class="search-panel" hidden>
+    <label for="siteSearch">Search this portfolio</label>
+    <div class="search-row">
+      <input id="siteSearch" type="search" placeholder="Research, projects, publications...">
+      <button id="searchClose" type="button">Close</button>
+    </div>
+    <div id="searchResults" class="search-results" aria-live="polite"></div>
+  </div>
 
-  <h2>Skills</h2>
-  <ul>
-    <li>Verilog</li>
-    <li>SystemVerilog</li>
-    <li>HSPICE</li>
-    <li>Vivado</li>
-    <li>PrimeTime</li>
-    <li>Fusion Compiler</li>
-    <li>Linux</li>
-  </ul>
+  <main id="siteContent">
+    <div class="loading-state">Loading portfolio...</div>
+  </main>
 
-  <h2>Projects</h2>
-  <ul>
-    <li>Impact of Temperature on Radiation-Induced Delays</li>
-    <li>FPGA-based CAN Bus Intrusion Detection System</li>
-    <li>UART Controller in Verilog</li>
-    <li>Static Timing Analysis Notes</li>
-  </ul>
+  <footer id="siteFooter"></footer>
 
-  <h2>Contact</h2>
-  <p>Email: your-email@gmail.com</p>
-  <p>LinkedIn: your LinkedIn link</p>
-  <p>GitHub: your GitHub link</p>
+  <script src="script.js" defer></script>
 </body>
 </html>
